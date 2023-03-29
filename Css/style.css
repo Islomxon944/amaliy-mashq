@@ -45,3 +45,10 @@ img{
 .main-content{
     flex-grow: 1;
 }
+
+textarea{
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    resize: vertical;
+}

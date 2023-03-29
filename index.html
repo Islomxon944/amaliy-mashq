@@ -13,10 +13,102 @@
 </head>
 <body>
     <main class="main-content">
-        
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <div>
+                <label for="islomxon">Familiya-Ism</label>
+                <input type="text" name="Fullname" id="islomxon" placeholder="F.I.SH" required>
+            </div>
+            <div>
+                <label for="Tug'ilgan-kun">Tug'ilgan-kun</label>
+                <input type="date" name="date" id="Tug'ilgan-kun" placeholder="Tug'ilgan-sana " required>
+            </div>
+            <div>
+                <label for="kurslar">Kurs-vaqti</label>
+                <select name="course_type"  id="kurslar">
+                    <optgroup label="Oflayn-darslar">
+                    <option value="Morning">Ertalabgi</option>
+                    <option value="Afternoon">Peshingi</option>
+                    <option value="Evening" disabled>Kechki</option>
+                    </optgroup>
+                    <optgroup label="Onlayn-darslar">
+                        <option value="Standart">Standart</option>
+                        <option value="Pro" selected>Pro</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+
+                <label>
+            <fieldset>
+                <legend>Qo'shimcha Xizmatlar</legend>
+                <input type="checkbox" name="laptop"> Noutbuk
+            </label>
+            <label>
+                <input type="checkbox" name="monitor"> monitor
+            </label>
+            <label>
+                <input type="checkbox" name="internet"> Internet
+            </label>
+            </fieldset>
+            </div>
+
+            
+
+            <fieldset>
+                <legend>To'lov Turlari</legend>
+                <label>
+                    <input type="radio" name="Tulov_turlari" value="cash"> Naqt pul
+                </label>
+                <label>
+                    <input type="radio" name="Tulov_turlari" value="Payme"> Payme
+                </label>
+                <label>
+                    <input type="radio" name="Tulov_turlari" value="click"> click
+                </label>
+                <label>
+                    <input type="radio" name="Tulov_turlari" value="Humans"> Humans
+                </label>
+                <label>
+                    <input type="radio" name="Tulov_turlari" value="Anorbank"> Anorbank
+                </label>
+                <label>
+                    <input type="radio" name="Tulov_turlari" value="Apelsin"> Apelsin
+                </label>
+            </fieldset>
+
+                <div>
+                    <label for="Samarqand_tumanlari">Tuman</label>
+                    <input type="text" name="Samarqand" id="Samarqand_tumanlari" list="Samarqand_list" placeholder="Tuman" required>
+
+                    <datalist id="Samarqand_list">
+                        <option>Bulung'ur</option>
+                        <option>Ishtixon </option>
+                        <option>Jomboy </option>
+                        <option>Kattaqo'rg'on</option>
+                        <option>Narpay </option>
+                        <option>Nurobod </option>
+                        <option>Oqdaryo </option>
+                        <option>Past darg'om </option>
+                        <option>Paxtachi </option>
+                        <option>Poyariq </option>
+                        <option>Qo'shrabot  </option>
+                        <option>Toyloq 	</option>
+                        <option>Urgut </option>
+                    </datalist>
+
+                </div>
+
+                <div>
+                    <label for="Qo'shimcha_fikirlar">Qo'shimcha ma'lumot</label>
+                    <textarea name="message" id="Qo'shimcha_fikirlar" placeholder="message" required></textarea>
+                </div>
+
+                    <button type="submit">Ro'yxatdan O'tish</button>
+        </form>
     </main>
     <div class="container">
 
     </div>
-</body>
+</body> 
 </html>
